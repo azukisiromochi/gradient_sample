@@ -62,14 +62,14 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     final Shader _linearGradient = LinearGradient(
       colors: <Color>[
-        Color(0xff00c3ff),
-        Color(0xffffff1c),
+        Color(0xff1A2980),
+        Color(0xff26D0CE),
       ],
     ).createShader(
       Rect.fromLTWH(
         0.0,
         0.0,
-        200.0,
+        250.0,
         70.0,
       ),
     );
