@@ -6,3 +6,6 @@ Hello Gradients!
 
 ## is 何？
 Flutter でのグラデーションの設定方法をまとめています。
+
+## 詳細は Qiita を
+:[Flutter グラデーションいろいろ 🎨 | Qiita](https://qiita.com/azukisiromochi/items/bedf81bae8f0470c58a3)
