@@ -60,6 +60,20 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final Shader _linearGradient = LinearGradient(
+      colors: <Color>[
+        Color(0xff00c3ff),
+        Color(0xffffff1c),
+      ],
+    ).createShader(
+      Rect.fromLTWH(
+        0.0,
+        0.0,
+        200.0,
+        70.0,
+      ),
+    );
+
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //
@@ -113,6 +127,10 @@ class _MyHomePageState extends State<MyHomePage> {
             children: <Widget>[
               Text(
                 'You have pushed the button this many times:',
+                style: new TextStyle(
+                    fontSize: 32.0,
+                    fontWeight: FontWeight.bold,
+                    foreground: Paint()..shader = _linearGradient),
               ),
               Text(
                 '$_counter',
